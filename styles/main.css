@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&family=Poppins:wght@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#4e65ff, #92effd);
+}
+
+.box{
+    background: #fff;
+    padding: 15px 40px ;
+    box-shadow: 15px 15px rgba(0,0,0,0.1);
+}
+
+.box h3 {
+    position: relative;
+    font-size: 1.25em;
+    color: #ccc;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.box #form {
+    position: relative;
+}
+
+.box #form #email{
+    width: 400px ;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #333;
+    padding: 10px 0 ;
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.box .inputbox{
+    position: relative;
+}
+
+#text {
+    display: block;
+    color: #999;
+    font-weight: 500;
+    padding: 5px 0 ;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.75em;
+}
+
+.box #form.invalid .inputbox::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background: url(/images/depositphotos_206909026-stock-illustration-red-tick-red-cross-tick.jpg);
+}
+
+.box #form.valid .inputbox::before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background: url(/images/529-5296386_e-currency-exchange-hyip-amp-bitcoin-forum-hyip.png);
+}
